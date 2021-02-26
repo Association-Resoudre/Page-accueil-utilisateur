@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<TITLE>France service Résoudre - Intranet</TITLE>
+<link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+<link rel="shortcut icon" href="images/favicon.png" />
+<!-- Bootstrap core CSS -->
+<link href="bootstrap-5.0.0-beta1-examples/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">
+<style>
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+.card-text a img:hover {
+	opacity:.7
+}
+.shadow-sm:hover {
+	border:1px solid #15c
+}
+ @media (min-width: 768px) {
+ .bd-placeholder-img-lg {
+ font-size: 3.5rem;
+}
+}
+</style>
+<script>
+            jQuery(function(){
+                $(function () {
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 200 ) { 
+                            $('#scrollUp').css('right','100px');
+                        } else { 
+                            $('#scrollUp').removeAttr( 'style' );
+                        }
+ 
+                    });
+                });
+            });
+</script>
+<link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+<!-- Bootstrap core CSS -->
+<link href="bootstrap-5.0.0-beta1-examples/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+.card-text a img:hover {
+	opacity:.7
+}
+.shadow-sm:hover {
+	border:1px solid #15c
+}
+ @media (min-width: 768px) {
+ .bd-placeholder-img-lg {
+ font-size: 3.5rem;
+}
+}
+#scrollUp {
+	position: fixed;
+	bottom : 10px;
+	right: -100px;
+	opacity: 0.5;
+}
+</style>
+<script>
+var p = $( "p" ).first();
+$( "p" ).last().text( "scrollTop:" + p.scrollTop() );
+</script>
+<link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+<style type="text/css">
+body {
+	background-color: #F8F9FA;
+}
+body, td, th {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="collapse bg-dark" id="navbarHeader"> 
+    <!--  <div class="container"> 
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+            <li><a href="#" class="text-white">Like on Facebook</a></li>
+            <li><a href="#" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> --> 
+  </div>
+  <!--<div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container"> <a href="http://www.resoudre37.fr" class="navbar-brand d-flex align-items-center" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24">
+        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+        <circle cx="12" cy="13" r="4"/>
+      </svg>
+      <strong>Résoudre - Intranet</strong> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    </div>
+  </div> --> 
+</header>
+<main> 
+  
+  <!--  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Album example</h1>
+        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Main call to action</a>
+          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        </p>
+      </div>
+    </div>
+  </section> -->
+   <div class="album py-5 bg-light" id="tooltip">
+       <div class="container">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 g-1">
+        <div class="col">
+          <div class="card shadow-sm"><div className="search-container" class="text-center"><a href="https://www.google.com/" target="_blank"><img src="Images/google_.jpg" width="360" height="150" alt="Google" /></a>
+  <form action="https://www.google.com/search" method="GET" target="_blank">
+    <input type="search" id="search" name="q" placeholder="Rechercher sur Google" size="60" style="height:35px; margin-bottom:10px;"  />
+    <button className="icon" type="submit"><i className="small material-icons">Rechercher</i></button>
+  </form>
+</div>
+          </div>
+          </div>
+          </div>
+          </div></div>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+      
+        <div class="col">
+          <div class="card shadow-sm">
+ 
+            <p class="card-text text-center"><a href="https://accounts.google.com/ServiceLogin?service=mail&amp;passive=true&amp;rm=false&amp;continue=https://mail.google.com/mail/&amp;ss=1&amp;scc=1&amp;ltmpl=default&amp;ltmplcache=2&amp;emr=1&amp;osid=1#" target="_blank" title="Gmail"><img src="Images/gmail-logo-2020.jpg" width="252" height="100" alt="Gmail" /></a></span>
+            <div class="card-body">
+              <p class="card-text text-center"><a href="https://accounts.google.com/ServiceLogin?service=mail&amp;passive=true&amp;rm=false&amp;continue=https://mail.google.com/mail/&amp;ss=1&amp;scc=1&amp;ltmpl=default&amp;ltmplcache=2&amp;emr=1&amp;osid=1#" target="_blank" title="Gmail" add_date="1517823944" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACpElEQVQ4jZWTPWjWZxTFz7nP8340b1VImqSZbEj11cWURjtLEadOgmJHoW0iSIYOilREEAQXrZ1KqlDJ0KFjQQqtNZaCCFqkQ/2oih+hSarG2PrGvP//89zjkNaG2KVnu8Plwj2/H/FvCEDA5ti7Zv1mBG00aCXElsSfp4ur53BnYgHLwqXD682RHWa2T9AGMkTSIM8AcgnwplL+dOq3sbGlBwnAAHhfc+QEY2UU7pASAGQCGbQqGAFlgAblYnxq7tluzIy3ANg/y59YrI16LkspZYKSADBWJdzOXozOL7Tf+P3XC9WU7fhrKxqbVjU/6Afg7Fk7PBiNFwVGyWHG4K5sIZjk19pl2jp78+Rk75qR9yzGwZTnzz8o/FJfvX4qt9PRGMg9tFiTl4lEkCQShIBUlB/P3jo12bvuw/0xVI8AQNUa6FGx1ZXPWjUcMxDvurIkGElKcDKYlO48uPXnd8D2qtH2ggHyErQaQtChouT3ZhiKgFZDIglIEo0CTXBeB77OwHZA3OntvxpuyF7MVeR2//HtsXv1dcMzcXmvL+dpdHU1g1VqpAsAGK2/rzm8MyfsigDvguyXu8xo7iLNCWJgseJeGnXUKo36Ig5ACHWk4km7HfJnBuEHYyAJ//uBJmUn40DPmx9tAb5ckHTQvQQgkIZUPvkJwOlXGE6Ejq6hewbtAixIkhlNgtNoJN6J3YPfPLx28kxH51tXzHjfPX2VvDgcGd73hC9C69HlmVe7NspibYuUMyAYae7uZrE7gttWdA6ZVP44Pfv4TEelNm3gWjed++PG2Nn/gbIDJJTT+NRc6wXKYdFA4OmjS982Ot++SnIAZDctRlolAACUCgA3JB2Yuv75AbR+KYFDBkz4Uhv/Q2euhLSo8/yVCUxeeLa85Oco7Wk+/NFu/AAAAABJRU5ErkJggg==">Gmail</a></p>
+              <!-- <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div> --> 
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <p class="card-text text-center"><a href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=13&amp;ct=1613051692&amp;rver=7.0.6737.0&amp;wp=MBI_SSL&amp;wreply=https://outlook.live.com/mail/0/inbox?nlp=1&amp;RpsCsrfState=771ef254-f6e4-c96d-c4e5-7af8d7da48d2&amp;id=292841&amp;aadredir=1&amp;CBCXT=out&amp;lw=1&amp;fl=dob,flname,wld&amp;cobrandid=90015" target="_blank" title="Outlook"><img src="Images/outlook.png" width="100" height="100" alt="Outlook" /></a></span>
+            <div class="card-body">
+              <p class="card-text text-center"><a href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=13&amp;ct=1613051692&amp;rver=7.0.6737.0&amp;wp=MBI_SSL&amp;wreply=https://outlook.live.com/mail/0/inbox?nlp=1&amp;RpsCsrfState=771ef254-f6e4-c96d-c4e5-7af8d7da48d2&amp;id=292841&amp;aadredir=1&amp;CBCXT=out&amp;lw=1&amp;fl=dob,flname,wld&amp;cobrandid=90015" target="_blank" add_date="1517823944" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACpElEQVQ4jZWTPWjWZxTFz7nP8340b1VImqSZbEj11cWURjtLEadOgmJHoW0iSIYOilREEAQXrZ1KqlDJ0KFjQQqtNZaCCFqkQ/2oih+hSarG2PrGvP//89zjkNaG2KVnu8Plwj2/H/FvCEDA5ti7Zv1mBG00aCXElsSfp4ur53BnYgHLwqXD682RHWa2T9AGMkTSIM8AcgnwplL+dOq3sbGlBwnAAHhfc+QEY2UU7pASAGQCGbQqGAFlgAblYnxq7tluzIy3ANg/y59YrI16LkspZYKSADBWJdzOXozOL7Tf+P3XC9WU7fhrKxqbVjU/6Afg7Fk7PBiNFwVGyWHG4K5sIZjk19pl2jp78+Rk75qR9yzGwZTnzz8o/FJfvX4qt9PRGMg9tFiTl4lEkCQShIBUlB/P3jo12bvuw/0xVI8AQNUa6FGx1ZXPWjUcMxDvurIkGElKcDKYlO48uPXnd8D2qtH2ggHyErQaQtChouT3ZhiKgFZDIglIEo0CTXBeB77OwHZA3OntvxpuyF7MVeR2//HtsXv1dcMzcXmvL+dpdHU1g1VqpAsAGK2/rzm8MyfsigDvguyXu8xo7iLNCWJgseJeGnXUKo36Ig5ACHWk4km7HfJnBuEHYyAJ//uBJmUn40DPmx9tAb5ckHTQvQQgkIZUPvkJwOlXGE6Ejq6hewbtAixIkhlNgtNoJN6J3YPfPLx28kxH51tXzHjfPX2VvDgcGd73hC9C69HlmVe7NspibYuUMyAYae7uZrE7gttWdA6ZVP44Pfv4TEelNm3gWjed++PG2Nn/gbIDJJTT+NRc6wXKYdFA4OmjS982Ot++SnIAZDctRlolAACUCgA3JB2Yuv75AbR+KYFDBkz4Uhv/Q2euhLSo8/yVCUxeeLa85Oco7Wk+/NFu/AAAAABJRU5ErkJggg==" title="Outlook">Outlook</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <p class="card-text text-center"><a href="https://www.laposte.net/accueil" target="_blank" title="laposte.net"><img src="Images/laposte.jpg" width="195" height="100" alt="laposte.net" /></a></span>
+            <div class="card-body">
+              <p class="card-text text-center"><a href="https://www.laposte.net/accueil" target="_blank" add_date="1517823944" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACpElEQVQ4jZWTPWjWZxTFz7nP8340b1VImqSZbEj11cWURjtLEadOgmJHoW0iSIYOilREEAQXrZ1KqlDJ0KFjQQqtNZaCCFqkQ/2oih+hSarG2PrGvP//89zjkNaG2KVnu8Plwj2/H/FvCEDA5ti7Zv1mBG00aCXElsSfp4ur53BnYgHLwqXD682RHWa2T9AGMkTSIM8AcgnwplL+dOq3sbGlBwnAAHhfc+QEY2UU7pASAGQCGbQqGAFlgAblYnxq7tluzIy3ANg/y59YrI16LkspZYKSADBWJdzOXozOL7Tf+P3XC9WU7fhrKxqbVjU/6Afg7Fk7PBiNFwVGyWHG4K5sIZjk19pl2jp78+Rk75qR9yzGwZTnzz8o/FJfvX4qt9PRGMg9tFiTl4lEkCQShIBUlB/P3jo12bvuw/0xVI8AQNUa6FGx1ZXPWjUcMxDvurIkGElKcDKYlO48uPXnd8D2qtH2ggHyErQaQtChouT3ZhiKgFZDIglIEo0CTXBeB77OwHZA3OntvxpuyF7MVeR2//HtsXv1dcMzcXmvL+dpdHU1g1VqpAsAGK2/rzm8MyfsigDvguyXu8xo7iLNCWJgseJeGnXUKo36Ig5ACHWk4km7HfJnBuEHYyAJ//uBJmUn40DPmx9tAb5ckHTQvQQgkIZUPvkJwOlXGE6Ejq6hewbtAixIkhlNgtNoJN6J3YPfPLx28kxH51tXzHjfPX2VvDgcGd73hC9C69HlmVe7NspibYuUMyAYae7uZrE7gttWdA6ZVP44Pfv4TEelNm3gWjed++PG2Nn/gbIDJJTT+NRc6wXKYdFA4OmjS982Ot++SnIAZDctRlolAACUCgA3JB2Yuv75AbR+KYFDBkz4Uhv/Q2euhLSo8/yVCUxeeLa85Oco7Wk+/NFu/AAAAABJRU5ErkJggg==" title="laposte.net">laposte.net</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <p class="card-text text-center"><a href="https://login.yahoo.com/?.src=ym&amp;lang=fr-FR&amp;done=https%3A//mail.yahoo.com/?.lang=fr-FR&amp;guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&amp;guce_referrer_sig=AQAAAC-McfMoe9jDD_SKwve56qg-j7CVOIReOHJqsXWP5kwHBxc8wK_9LNWZ1H4bw_imxRfhAoWK77_OIjj4NHoPRuFcfTcMfg7IrvazBK4i2DxsZdlQfoDskGO5xp9cReIfORf10YPfEYDfde3SmBPmWEmIAKKZGBtzy5CwClsnlx1A" target="_blank" title="Yahoo mail"><img src="Images/yahoo-mail.jpg" width="124" height="100" alt="Yahoo mail" /></a></span>
+            <div class="card-body">
+              <p class="card-text text-center"><a href="https://login.yahoo.com/?.src=ym&amp;lang=fr-FR&amp;done=https%3A//mail.yahoo.com/?.lang=fr-FR&amp;guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&amp;guce_referrer_sig=AQAAAC-McfMoe9jDD_SKwve56qg-j7CVOIReOHJqsXWP5kwHBxc8wK_9LNWZ1H4bw_imxRfhAoWK77_OIjj4NHoPRuFcfTcMfg7IrvazBK4i2DxsZdlQfoDskGO5xp9cReIfORf10YPfEYDfde3SmBPmWEmIAKKZGBtzy5CwClsnlx1A" target="_blank" add_date="1517823944" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACpElEQVQ4jZWTPWjWZxTFz7nP8340b1VImqSZbEj11cWURjtLEadOgmJHoW0iSIYOilREEAQXrZ1KqlDJ0KFjQQqtNZaCCFqkQ/2oih+hSarG2PrGvP//89zjkNaG2KVnu8Plwj2/H/FvCEDA5ti7Zv1mBG00aCXElsSfp4ur53BnYgHLwqXD682RHWa2T9AGMkTSIM8AcgnwplL+dOq3sbGlBwnAAHhfc+QEY2UU7pASAGQCGbQqGAFlgAblYnxq7tluzIy3ANg/y59YrI16LkspZYKSADBWJdzOXozOL7Tf+P3XC9WU7fhrKxqbVjU/6Afg7Fk7PBiNFwVGyWHG4K5sIZjk19pl2jp78+Rk75qR9yzGwZTnzz8o/FJfvX4qt9PRGMg9tFiTl4lEkCQShIBUlB/P3jo12bvuw/0xVI8AQNUa6FGx1ZXPWjUcMxDvurIkGElKcDKYlO48uPXnd8D2qtH2ggHyErQaQtChouT3ZhiKgFZDIglIEo0CTXBeB77OwHZA3OntvxpuyF7MVeR2//HtsXv1dcMzcXmvL+dpdHU1g1VqpAsAGK2/rzm8MyfsigDvguyXu8xo7iLNCWJgseJeGnXUKo36Ig5ACHWk4km7HfJnBuEHYyAJ//uBJmUn40DPmx9tAb5ckHTQvQQgkIZUPvkJwOlXGE6Ejq6hewbtAixIkhlNgtNoJN6J3YPfPLx28kxH51tXzHjfPX2VvDgcGd73hC9C69HlmVe7NspibYuUMyAYae7uZrE7gttWdA6ZVP44Pfv4TEelNm3gWjed++PG2Nn/gbIDJJTT+NRc6wXKYdFA4OmjS982Ot++SnIAZDctRlolAACUCgA3JB2Yuv75AbR+KYFDBkz4Uhv/Q2euhLSo8/yVCUxeeLa85Oco7Wk+/NFu/AAAAABJRU5ErkJggg==" title="Yahoo mail">Yahoo mail</a></p>
+              <!-- <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div> --> 
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <p class="card-text text-center"><a href="https://www.pole-emploi.fr/accueil/" target="_blank" title="Accueil Pôle emploi" rel="tooltip" ><img src="Images/logo-pole-emploi.png" width="143" height="100" alt="Logo Pôle Emploi" /></a></p>
+              <p class="card-text text-center"><a rel="tooltip" href="https://www.pole-emploi.fr/accueil/" target="_blank" add_date="1517823944" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACpElEQVQ4jZWTPWjWZxTFz7nP8340b1VImqSZbEj11cWURjtLEadOgmJHoW0iSIYOilREEAQXrZ1KqlDJ0KFjQQqtNZaCCFqkQ/2oih+hSarG2PrGvP//89zjkNaG2KVnu8Plwj2/H/FvCEDA5ti7Zv1mBG00aCXElsSfp4ur53BnYgHLwqXD682RHWa2T9AGMkTSIM8AcgnwplL+dOq3sbGlBwnAAHhfc+QEY2UU7pASAGQCGbQqGAFlgAblYnxq7tluzIy3ANg/y59YrI16LkspZYKSADBWJdzOXozOL7Tf+P3XC9WU7fhrKxqbVjU/6Afg7Fk7PBiNFwVGyWHG4K5sIZjk19pl2jp78+Rk75qR9yzGwZTnzz8o/FJfvX4qt9PRGMg9tFiTl4lEkCQShIBUlB/P3jo12bvuw/0xVI8AQNUa6FGx1ZXPWjUcMxDvurIkGElKcDKYlO48uPXnd8D2qtH2ggHyErQaQtChouT3ZhiKgFZDIglIEo0CTXBeB77OwHZA3OntvxpuyF7MVeR2//HtsXv1dcMzcXmvL+dpdHU1g1VqpAsAGK2/rzm8MyfsigDvguyXu8xo7iLNCWJgseJeGnXUKo36Ig5ACHWk4km7HfJnBuEHYyAJ//uBJmUn40DPmx9tAb5ckHTQvQQgkIZUPvkJwOlXGE6Ejq6hewbtAixIkhlNgtNoJN6J3YPfPLx28kxH51tXzHjfPX2VvDgcGd73hC9C69HlmVe7NspibYuUMyAYae7uZrE7gttWdA6ZVP44Pfv4TEelNm3gWjed++PG2Nn/gbIDJJTT+NRc6wXKYdFA4OmjS982Ot++SnIAZDctRlolAACUCgA3JB2Yuv75AbR+KYFDBkz4Uhv/Q2euhLSo8/yVCUxeeLa85Oco7Wk+/NFu/AAAAABJRU5ErkJggg==" title="Accueil Pôle emploi">Accueil Pôle emploi</a></p>
+              <!--<div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div> --> 
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <p class="card-text text-center"><a href="https://authentification-candidat.pole-emploi.fr/connexion/XUI/?realm=/individu&amp;goto=https%3A//authentification-candidat.pole-emploi.fr%3A443/connexion/oauth2/realms/root/realms/individu/authorize?realm=%2Findividu&amp;response_type=id_token%20token&amp;scope=openid%20compteUsager%20profile%20contexteAuthentification%20email%20courrier%20notifications%20etatcivil%20logW%20individu%20pilote%20nomenclature%20coordonnees%20navigation%20reclamation%20prdvl%20idIdentiteExterne%20pole_emploi%20suggestions%20actu%20application_USG_PN073-tdbcandidat_6408B42F17FC872440D4FF01BA6BAB16999CD903772C528808D1E6FA2B585CF2&amp;client_id=USG_PN073-tdbcandidat_6408B42F17FC872440D4FF01BA6BAB16999CD903772C528808D1E6FA2B585CF2&amp;state=tml2kErx5IUA7NMK&amp;nonce=fZf8R5K6RuKgRHrz&amp;redirect_uri=https%3A%2F%2Fcandidat.pole-emploi.fr%2Fespacepersonnel%2F#login/" target="_blank" title="Pôle emploi - Connexion candidat" rel="tooltip" ><img src="Images/logo-pole-emplo2i.jpg" width="143" height="100" alt="Logo Pôle Emploi" /></a></p>
+              <p class="card-text text-center"><a href="https://authentification-candidat.pole-emploi.fr/connexion/XUI/?realm=/individu&amp;goto=https%3A//authentification-candidat.pole-emploi.fr%3A443/connexion/oauth2/realms/root/realms/individu/authorize?realm=%2Findividu&amp;response_type=id_token%20token&amp;scope=openid%20compteUsager%20profile%20contexteAuthentification%20email%20courrier%20notifications%20etatcivil%20logW%20individu%20pilote%20nomenclature%20coordonnees%20navigation%20reclamation%20prdvl%20idIdentiteExterne%20pole_emploi%20suggestions%20actu%20application_USG_PN073-tdbcandidat_6408B42F17FC872440D4FF01BA6BAB16999CD903772C528808D1E6FA2B585CF2&amp;client_id=USG_PN073-tdbcandidat_6408B42F17FC872440D4FF01BA6BAB16999CD903772C528808D1E6FA2B585CF2&amp;state=tml2kErx5IUA7NMK&amp;nonce=fZf8R5K6RuKgRHrz&amp;redirect_uri=https%3A%2F%2Fcandidat.pole-emploi.fr%2Fespacepersonnel%2F#login/" target="_blank" rel="tooltip" add_date="1517823944" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACpElEQVQ4jZWTPWjWZxTFz7nP8340b1VImqSZbEj11cWURjtLEadOgmJHoW0iSIYOilREEAQXrZ1KqlDJ0KFjQQqtNZaCCFqkQ/2oih+hSarG2PrGvP//89zjkNaG2KVnu8Plwj2/H/FvCEDA5ti7Zv1mBG00aCXElsSfp4ur53BnYgHLwqXD682RHWa2T9AGMkTSIM8AcgnwplL+dOq3sbGlBwnAAHhfc+QEY2UU7pASAGQCGbQqGAFlgAblYnxq7tluzIy3ANg/y59YrI16LkspZYKSADBWJdzOXozOL7Tf+P3XC9WU7fhrKxqbVjU/6Afg7Fk7PBiNFwVGyWHG4K5sIZjk19pl2jp78+Rk75qR9yzGwZTnzz8o/FJfvX4qt9PRGMg9tFiTl4lEkCQShIBUlB/P3jo12bvuw/0xVI8AQNUa6FGx1ZXPWjUcMxDvurIkGElKcDKYlO48uPXnd8D2qtH2ggHyErQaQtChouT3ZhiKgFZDIglIEo0CTXBeB77OwHZA3OntvxpuyF7MVeR2//HtsXv1dcMzcXmvL+dpdHU1g1VqpAsAGK2/rzm8MyfsigDvguyXu8xo7iLNCWJgseJeGnXUKo36Ig5ACHWk4km7HfJnBuEHYyAJ//uBJmUn40DPmx9tAb5ckHTQvQQgkIZUPvkJwOlXGE6Ejq6hewbtAixIkhlNgtNoJN6J3YPfPLx28kxH51tXzHjfPX2VvDgcGd73hC9C69HlmVe7NspibYuUMyAYae7uZrE7gttWdA6ZVP44Pfv4TEelNm3gWjed++PG2Nn/gbIDJJTT+NRc6wXKYdFA4OmjS982Ot++SnIAZDctRlolAACUCgA3JB2Yuv75AbR+KYFDBkz4Uhv/Q2euhLSo8/yVCUxeeLa85Oco7Wk+/NFu/AAAAABJRU5ErkJggg==" title="Pôle emploi - Connexion candidat"> Pôle emploi - Connexion candidat</a></p>
+              <!--<div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div> --> 
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <p class="card-text text-center"><a href="https://www.caf.fr/" target="_blank" title="Accueil CAF"><img src="Images/logo_caf-fr.jpg" width="96" height="100" alt="Accueil CAF" /></a></p>
+              <p class="card-text text-center"><a href="https://www.caf.fr/" target="_blank" add_date="1517823944" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACpElEQVQ4jZWTPWjWZxTFz7nP8340b1VImqSZbEj11cWURjtLEadOgmJHoW0iSIYOilREEAQXrZ1KqlDJ0KFjQQqtNZaCCFqkQ/2oih+hSarG2PrGvP//89zjkNaG2KVnu8Plwj2/H/FvCEDA5ti7Zv1mBG00aCXElsSfp4ur53BnYgHLwqXD682RHWa2T9AGMkTSIM8AcgnwplL+dOq3sbGlBwnAAHhfc+QEY2UU7pASAGQCGbQqGAFlgAblYnxq7tluzIy3ANg/y59YrI16LkspZYKSADBWJdzOXozOL7Tf+P3XC9WU7fhrKxqbVjU/6Afg7Fk7PBiNFwVGyWHG4K5sIZjk19pl2jp78+Rk75qR9yzGwZTnzz8o/FJfvX4qt9PRGMg9tFiTl4lEkCQShIBUlB/P3jo12bvuw/0xVI8AQNUa6FGx1ZXPWjUcMxDvurIkGElKcDKYlO48uPXnd8D2qtH2ggHyErQaQtChouT3ZhiKgFZDIglIEo0CTXBeB77OwHZA3OntvxpuyF7MVeR2//HtsXv1dcMzcXmvL+dpdHU1g1VqpAsAGK2/rzm8MyfsigDvguyXu8xo7iLNCWJgseJeGnXUKo36Ig5ACHWk4km7HfJnBuEHYyAJ//uBJmUn40DPmx9tAb5ckHTQvQQgkIZUPvkJwOlXGE6Ejq6hewbtAixIkhlNgtNoJN6J3YPfPLx28kxH51tXzHjfPX2VvDgcGd73hC9C69HlmVe7NspibYuUMyAYae7uZrE7gttWdA6ZVP44Pfv4TEelNm3gWjed++PG2Nn/gbIDJJTT+NRc6wXKYdFA4OmjS982Ot++SnIAZDctRlolAACUCgA3JB2Yuv75AbR+KYFDBkz4Uhv/Q2euhLSo8/yVCUxeeLa85Oco7Wk+/NFu/AAAAABJRU5ErkJggg==" title="Accueil CAF">Accueil CAF</a></p>
+              <!-- <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div> --> 
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <p class="card-text text-center"><a href="https://wwwd.caf.fr/wps/portal/caffr/login/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAfGjzOID_A3dPbyDDdz9A1yNDTxdzQNDXJ19DS0CjYAKIoEKDHAARwNC-sP1o8BK8JjgpR-VnpOfBHZNpGNekrFFun5UUWpaalFqkV5pEVA4o6SkoNhK1UDVoLy8XC85MU0vrUjVAJvyjPziEv0IhCr9gtwIA92opMpyR0VFAE_8qVE!/dl5/d5/L2dBISEvZ0FBIS9nQSEh/#/signature" target="_blank" title="CAF - Mon Compte"><img src="Images/logo_caf-fr2.jpg" width="96" height="100" alt="CAF - Mon Compte" /></a></p>
+              <p class="card-text text-center"><a href="https://wwwd.caf.fr/wps/portal/caffr/login/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAfGjzOID_A3dPbyDDdz9A1yNDTxdzQNDXJ19DS0CjYAKIoEKDHAARwNC-sP1o8BK8JjgpR-VnpOfBHZNpGNekrFFun5UUWpaalFqkV5pEVA4o6SkoNhK1UDVoLy8XC85MU0vrUjVAJvyjPziEv0IhCr9gtwIA92opMpyR0VFAE_8qVE!/dl5/d5/L2dBISEvZ0FBIS9nQSEh/#/signature" target="_blank" add_date="1517823944" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACpElEQVQ4jZWTPWjWZxTFz7nP8340b1VImqSZbEj11cWURjtLEadOgmJHoW0iSIYOilREEAQXrZ1KqlDJ0KFjQQqtNZaCCFqkQ/2oih+hSarG2PrGvP//89zjkNaG2KVnu8Plwj2/H/FvCEDA5ti7Zv1mBG00aCXElsSfp4ur53BnYgHLwqXD682RHWa2T9AGMkTSIM8AcgnwplL+dOq3sbGlBwnAAHhfc+QEY2UU7pASAGQCGbQqGAFlgAblYnxq7tluzIy3ANg/y59YrI16LkspZYKSADBWJdzOXozOL7Tf+P3XC9WU7fhrKxqbVjU/6Afg7Fk7PBiNFwVGyWHG4K5sIZjk19pl2jp78+Rk75qR9yzGwZTnzz8o/FJfvX4qt9PRGMg9tFiTl4lEkCQShIBUlB/P3jo12bvuw/0xVI8AQNUa6FGx1ZXPWjUcMxDvurIkGElKcDKYlO48uPXnd8D2qtH2ggHyErQaQtChouT3ZhiKgFZDIglIEo0CTXBeB77OwHZA3OntvxpuyF7MVeR2//HtsXv1dcMzcXmvL+dpdHU1g1VqpAsAGK2/rzm8MyfsigDvguyXu8xo7iLNCWJgseJeGnXUKo36Ig5ACHWk4km7HfJnBuEHYyAJ//uBJmUn40DPmx9tAb5ckHTQvQQgkIZUPvkJwOlXGE6Ejq6hewbtAixIkhlNgtNoJN6J3YPfPLx28kxH51tXzHjfPX2VvDgcGd73hC9C69HlmVe7NspibYuUMyAYae7uZrE7gttWdA6ZVP44Pfv4TEelNm3gWjed++PG2Nn/gbIDJJTT+NRc6wXKYdFA4OmjS982Ot++SnIAZDctRlolAACUCgA3JB2Yuv75AbR+KYFDBkz4Uhv/Q2euhLSo8/yVCUxeeLa85Oco7Wk+/NFu/AAAAABJRU5ErkJggg==" title="CAF - Mon Compte">CAF - Mon Compte</a></p>
+              <!-- <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div> --> 
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <p class="card-text text-center"><a href="https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure" target="_blank" title="Mon compte Ameli"><img src="Images/ameli.png" width="185" height="100" alt="Mon compte Ameli" /></a></p>
+              <p class="card-text text-center"><a href="https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure" target="_blank" add_date="1517823944" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACpElEQVQ4jZWTPWjWZxTFz7nP8340b1VImqSZbEj11cWURjtLEadOgmJHoW0iSIYOilREEAQXrZ1KqlDJ0KFjQQqtNZaCCFqkQ/2oih+hSarG2PrGvP//89zjkNaG2KVnu8Plwj2/H/FvCEDA5ti7Zv1mBG00aCXElsSfp4ur53BnYgHLwqXD682RHWa2T9AGMkTSIM8AcgnwplL+dOq3sbGlBwnAAHhfc+QEY2UU7pASAGQCGbQqGAFlgAblYnxq7tluzIy3ANg/y59YrI16LkspZYKSADBWJdzOXozOL7Tf+P3XC9WU7fhrKxqbVjU/6Afg7Fk7PBiNFwVGyWHG4K5sIZjk19pl2jp78+Rk75qR9yzGwZTnzz8o/FJfvX4qt9PRGMg9tFiTl4lEkCQShIBUlB/P3jo12bvuw/0xVI8AQNUa6FGx1ZXPWjUcMxDvurIkGElKcDKYlO48uPXnd8D2qtH2ggHyErQaQtChouT3ZhiKgFZDIglIEo0CTXBeB77OwHZA3OntvxpuyF7MVeR2//HtsXv1dcMzcXmvL+dpdHU1g1VqpAsAGK2/rzm8MyfsigDvguyXu8xo7iLNCWJgseJeGnXUKo36Ig5ACHWk4km7HfJnBuEHYyAJ//uBJmUn40DPmx9tAb5ckHTQvQQgkIZUPvkJwOlXGE6Ejq6hewbtAixIkhlNgtNoJN6J3YPfPLx28kxH51tXzHjfPX2VvDgcGd73hC9C69HlmVe7NspibYuUMyAYae7uZrE7gttWdA6ZVP44Pfv4TEelNm3gWjed++PG2Nn/gbIDJJTT+NRc6wXKYdFA4OmjS982Ot++SnIAZDctRlolAACUCgA3JB2Yuv75AbR+KYFDBkz4Uhv/Q2euhLSo8/yVCUxeeLa85Oco7Wk+/NFu/AAAAABJRU5ErkJggg==" title="Mon compte Ameli">Mon compte  Ameli</a></p>
+              <!-- <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div> --> 
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <p class="card-text text-center"><a href="https://ants.gouv.fr/" target="_blank" title="Agence nationale des titres sécurisés"><img src="Images/ants.jpg" width="250" height="100" alt="Agence nationale des titres sécurisés" /></a></p>
+              <p class="card-text text-center"><a href="https://ants.gouv.fr/" target="_blank" add_date="1517823944" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACpElEQVQ4jZWTPWjWZxTFz7nP8340b1VImqSZbEj11cWURjtLEadOgmJHoW0iSIYOilREEAQXrZ1KqlDJ0KFjQQqtNZaCCFqkQ/2oih+hSarG2PrGvP//89zjkNaG2KVnu8Plwj2/H/FvCEDA5ti7Zv1mBG00aCXElsSfp4ur53BnYgHLwqXD682RHWa2T9AGMkTSIM8AcgnwplL+dOq3sbGlBwnAAHhfc+QEY2UU7pASAGQCGbQqGAFlgAblYnxq7tluzIy3ANg/y59YrI16LkspZYKSADBWJdzOXozOL7Tf+P3XC9WU7fhrKxqbVjU/6Afg7Fk7PBiNFwVGyWHG4K5sIZjk19pl2jp78+Rk75qR9yzGwZTnzz8o/FJfvX4qt9PRGMg9tFiTl4lEkCQShIBUlB/P3jo12bvuw/0xVI8AQNUa6FGx1ZXPWjUcMxDvurIkGElKcDKYlO48uPXnd8D2qtH2ggHyErQaQtChouT3ZhiKgFZDIglIEo0CTXBeB77OwHZA3OntvxpuyF7MVeR2//HtsXv1dcMzcXmvL+dpdHU1g1VqpAsAGK2/rzm8MyfsigDvguyXu8xo7iLNCWJgseJeGnXUKo36Ig5ACHWk4km7HfJnBuEHYyAJ//uBJmUn40DPmx9tAb5ckHTQvQQgkIZUPvkJwOlXGE6Ejq6hewbtAixIkhlNgtNoJN6J3YPfPLx28kxH51tXzHjfPX2VvDgcGd73hC9C69HlmVe7NspibYuUMyAYae7uZrE7gttWdA6ZVP44Pfv4TEelNm3gWjed++PG2Nn/gbIDJJTT+NRc6wXKYdFA4OmjS982Ot++SnIAZDctRlolAACUCgA3JB2Yuv75AbR+KYFDBkz4Uhv/Q2euhLSo8/yVCUxeeLa85Oco7Wk+/NFu/AAAAABJRU5ErkJggg==" title="Agence nationale des titres sécurisés">Agence nationale des titres sécurisés</a></p>
+              <!--<div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div> --> 
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <p class="card-text text-center"><a href="https://www.indre-et-loire.gouv.fr/" target="_blank" title="Préfecture d'Indre-et-Loire"><img src="Images/pref.jpg" width="79" height="100" alt="Préfecture d'Indre-et-Loire" /></a></p>
+              <p class="card-text text-center"><a href="https://www.indre-et-loire.gouv.fr/" target="_blank" add_date="1517823944" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACpElEQVQ4jZWTPWjWZxTFz7nP8340b1VImqSZbEj11cWURjtLEadOgmJHoW0iSIYOilREEAQXrZ1KqlDJ0KFjQQqtNZaCCFqkQ/2oih+hSarG2PrGvP//89zjkNaG2KVnu8Plwj2/H/FvCEDA5ti7Zv1mBG00aCXElsSfp4ur53BnYgHLwqXD682RHWa2T9AGMkTSIM8AcgnwplL+dOq3sbGlBwnAAHhfc+QEY2UU7pASAGQCGbQqGAFlgAblYnxq7tluzIy3ANg/y59YrI16LkspZYKSADBWJdzOXozOL7Tf+P3XC9WU7fhrKxqbVjU/6Afg7Fk7PBiNFwVGyWHG4K5sIZjk19pl2jp78+Rk75qR9yzGwZTnzz8o/FJfvX4qt9PRGMg9tFiTl4lEkCQShIBUlB/P3jo12bvuw/0xVI8AQNUa6FGx1ZXPWjUcMxDvurIkGElKcDKYlO48uPXnd8D2qtH2ggHyErQaQtChouT3ZhiKgFZDIglIEo0CTXBeB77OwHZA3OntvxpuyF7MVeR2//HtsXv1dcMzcXmvL+dpdHU1g1VqpAsAGK2/rzm8MyfsigDvguyXu8xo7iLNCWJgseJeGnXUKo36Ig5ACHWk4km7HfJnBuEHYyAJ//uBJmUn40DPmx9tAb5ckHTQvQQgkIZUPvkJwOlXGE6Ejq6hewbtAixIkhlNgtNoJN6J3YPfPLx28kxH51tXzHjfPX2VvDgcGd73hC9C69HlmVe7NspibYuUMyAYae7uZrE7gttWdA6ZVP44Pfv4TEelNm3gWjed++PG2Nn/gbIDJJTT+NRc6wXKYdFA4OmjS982Ot++SnIAZDctRlolAACUCgA3JB2Yuv75AbR+KYFDBkz4Uhv/Q2euhLSo8/yVCUxeeLa85Oco7Wk+/NFu/AAAAABJRU5ErkJggg==" title="Préfecture d'Indre-et-Loire">Préfecture d'Indre-et-Loire</a></p>
+              <!--  <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div> --> 
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <p class="card-text text-center"><a href="https://cfspart.impots.gouv.fr/LoginAccess?op=c&amp;url=aHR0cHM6Ly9jZnNwYXJ0LmltcG90cy5nb3V2LmZyLw==" target="_blank" title="Mon espace Impôts"><img src="Images/impot.jpg" width="250" height="100" alt="Direction générale des Finances publiques" /></a></span>
+            <div class="card-body">
+              <p class="card-text text-center"><a href="https://cfspart.impots.gouv.fr/LoginAccess?op=c&amp;url=aHR0cHM6Ly9jZnNwYXJ0LmltcG90cy5nb3V2LmZyLw==" target="_blank" add_date="1517823944" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACpElEQVQ4jZWTPWjWZxTFz7nP8340b1VImqSZbEj11cWURjtLEadOgmJHoW0iSIYOilREEAQXrZ1KqlDJ0KFjQQqtNZaCCFqkQ/2oih+hSarG2PrGvP//89zjkNaG2KVnu8Plwj2/H/FvCEDA5ti7Zv1mBG00aCXElsSfp4ur53BnYgHLwqXD682RHWa2T9AGMkTSIM8AcgnwplL+dOq3sbGlBwnAAHhfc+QEY2UU7pASAGQCGbQqGAFlgAblYnxq7tluzIy3ANg/y59YrI16LkspZYKSADBWJdzOXozOL7Tf+P3XC9WU7fhrKxqbVjU/6Afg7Fk7PBiNFwVGyWHG4K5sIZjk19pl2jp78+Rk75qR9yzGwZTnzz8o/FJfvX4qt9PRGMg9tFiTl4lEkCQShIBUlB/P3jo12bvuw/0xVI8AQNUa6FGx1ZXPWjUcMxDvurIkGElKcDKYlO48uPXnd8D2qtH2ggHyErQaQtChouT3ZhiKgFZDIglIEo0CTXBeB77OwHZA3OntvxpuyF7MVeR2//HtsXv1dcMzcXmvL+dpdHU1g1VqpAsAGK2/rzm8MyfsigDvguyXu8xo7iLNCWJgseJeGnXUKo36Ig5ACHWk4km7HfJnBuEHYyAJ//uBJmUn40DPmx9tAb5ckHTQvQQgkIZUPvkJwOlXGE6Ejq6hewbtAixIkhlNgtNoJN6J3YPfPLx28kxH51tXzHjfPX2VvDgcGd73hC9C69HlmVe7NspibYuUMyAYae7uZrE7gttWdA6ZVP44Pfv4TEelNm3gWjed++PG2Nn/gbIDJJTT+NRc6wXKYdFA4OmjS982Ot++SnIAZDctRlolAACUCgA3JB2Yuv75AbR+KYFDBkz4Uhv/Q2euhLSo8/yVCUxeeLa85Oco7Wk+/NFu/AAAAABJRU5ErkJggg==" title="Mon espace Impôts">Mon espace Impôts</a></p>
+              <!-- <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div> --> 
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <p class="card-text text-center"><a href="https://www.service-public.fr/" target="_blank" title="Service-public.fr"><img src="Images/sp.jpg" width="220" height="100" alt="Service-public.fr" /></a></span>
+            <div class="card-body">
+              <p class="card-text text-center"><a href="https://www.service-public.fr/" target="_blank" add_date="1517823944" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACpElEQVQ4jZWTPWjWZxTFz7nP8340b1VImqSZbEj11cWURjtLEadOgmJHoW0iSIYOilREEAQXrZ1KqlDJ0KFjQQqtNZaCCFqkQ/2oih+hSarG2PrGvP//89zjkNaG2KVnu8Plwj2/H/FvCEDA5ti7Zv1mBG00aCXElsSfp4ur53BnYgHLwqXD682RHWa2T9AGMkTSIM8AcgnwplL+dOq3sbGlBwnAAHhfc+QEY2UU7pASAGQCGbQqGAFlgAblYnxq7tluzIy3ANg/y59YrI16LkspZYKSADBWJdzOXozOL7Tf+P3XC9WU7fhrKxqbVjU/6Afg7Fk7PBiNFwVGyWHG4K5sIZjk19pl2jp78+Rk75qR9yzGwZTnzz8o/FJfvX4qt9PRGMg9tFiTl4lEkCQShIBUlB/P3jo12bvuw/0xVI8AQNUa6FGx1ZXPWjUcMxDvurIkGElKcDKYlO48uPXnd8D2qtH2ggHyErQaQtChouT3ZhiKgFZDIglIEo0CTXBeB77OwHZA3OntvxpuyF7MVeR2//HtsXv1dcMzcXmvL+dpdHU1g1VqpAsAGK2/rzm8MyfsigDvguyXu8xo7iLNCWJgseJeGnXUKo36Ig5ACHWk4km7HfJnBuEHYyAJ//uBJmUn40DPmx9tAb5ckHTQvQQgkIZUPvkJwOlXGE6Ejq6hewbtAixIkhlNgtNoJN6J3YPfPLx28kxH51tXzHjfPX2VvDgcGd73hC9C69HlmVe7NspibYuUMyAYae7uZrE7gttWdA6ZVP44Pfv4TEelNm3gWjed++PG2Nn/gbIDJJTT+NRc6wXKYdFA4OmjS982Ot++SnIAZDctRlolAACUCgA3JB2Yuv75AbR+KYFDBkz4Uhv/Q2euhLSo8/yVCUxeeLa85Oco7Wk+/NFu/AAAAABJRU5ErkJggg==" title="Service-public.fr">Service-public.fr</a></p>
+              <!-- <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div> --> 
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <p class="card-text text-center"><a href="https://www.lassuranceretraite.fr/portail-services-ng/authentication" target="_blank" title="Espace personnel - Assurance retraite"><img src="Images/carsat.png" width="210" height="100" alt="Espace personnel - Assurance retraite" /></a></span>
+            <div class="card-body">
+              <p class="card-text text-center"><a href="https://www.lassuranceretraite.fr/portail-services-ng/authentication" target="_blank" add_date="1517823944" title="Gmail" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACpElEQVQ4jZWTPWjWZxTFz7nP8340b1VImqSZbEj11cWURjtLEadOgmJHoW0iSIYOilREEAQXrZ1KqlDJ0KFjQQqtNZaCCFqkQ/2oih+hSarG2PrGvP//89zjkNaG2KVnu8Plwj2/H/FvCEDA5ti7Zv1mBG00aCXElsSfp4ur53BnYgHLwqXD682RHWa2T9AGMkTSIM8AcgnwplL+dOq3sbGlBwnAAHhfc+QEY2UU7pASAGQCGbQqGAFlgAblYnxq7tluzIy3ANg/y59YrI16LkspZYKSADBWJdzOXozOL7Tf+P3XC9WU7fhrKxqbVjU/6Afg7Fk7PBiNFwVGyWHG4K5sIZjk19pl2jp78+Rk75qR9yzGwZTnzz8o/FJfvX4qt9PRGMg9tFiTl4lEkCQShIBUlB/P3jo12bvuw/0xVI8AQNUa6FGx1ZXPWjUcMxDvurIkGElKcDKYlO48uPXnd8D2qtH2ggHyErQaQtChouT3ZhiKgFZDIglIEo0CTXBeB77OwHZA3OntvxpuyF7MVeR2//HtsXv1dcMzcXmvL+dpdHU1g1VqpAsAGK2/rzm8MyfsigDvguyXu8xo7iLNCWJgseJeGnXUKo36Ig5ACHWk4km7HfJnBuEHYyAJ//uBJmUn40DPmx9tAb5ckHTQvQQgkIZUPvkJwOlXGE6Ejq6hewbtAixIkhlNgtNoJN6J3YPfPLx28kxH51tXzHjfPX2VvDgcGd73hC9C69HlmVe7NspibYuUMyAYae7uZrE7gttWdA6ZVP44Pfv4TEelNm3gWjed++PG2Nn/gbIDJJTT+NRc6wXKYdFA4OmjS982Ot++SnIAZDctRlolAACUCgA3JB2Yuv75AbR+KYFDBkz4Uhv/Q2euhLSo8/yVCUxeeLa85Oco7Wk+/NFu/AAAAABJRU5ErkJggg==">Espace personnel - Assurance retraite</a></p>
+              <!-- <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div> --> 
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <p class="card-text text-center"><a href="https://www.msa.fr/lfy/espace-prive" target="_blank" title="MSA - Mon espace privé"><img src="Images/msa.png" width="215" height="100" alt="MSA - Mon espace privé" /></a></span>
+            <div class="card-body">
+              <p class="card-text text-center"><a href="https://www.msa.fr/lfy/espace-prive" target="_blank" add_date="1517823944" title="MSA - Mon espace privé" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACpElEQVQ4jZWTPWjWZxTFz7nP8340b1VImqSZbEj11cWURjtLEadOgmJHoW0iSIYOilREEAQXrZ1KqlDJ0KFjQQqtNZaCCFqkQ/2oih+hSarG2PrGvP//89zjkNaG2KVnu8Plwj2/H/FvCEDA5ti7Zv1mBG00aCXElsSfp4ur53BnYgHLwqXD682RHWa2T9AGMkTSIM8AcgnwplL+dOq3sbGlBwnAAHhfc+QEY2UU7pASAGQCGbQqGAFlgAblYnxq7tluzIy3ANg/y59YrI16LkspZYKSADBWJdzOXozOL7Tf+P3XC9WU7fhrKxqbVjU/6Afg7Fk7PBiNFwVGyWHG4K5sIZjk19pl2jp78+Rk75qR9yzGwZTnzz8o/FJfvX4qt9PRGMg9tFiTl4lEkCQShIBUlB/P3jo12bvuw/0xVI8AQNUa6FGx1ZXPWjUcMxDvurIkGElKcDKYlO48uPXnd8D2qtH2ggHyErQaQtChouT3ZhiKgFZDIglIEo0CTXBeB77OwHZA3OntvxpuyF7MVeR2//HtsXv1dcMzcXmvL+dpdHU1g1VqpAsAGK2/rzm8MyfsigDvguyXu8xo7iLNCWJgseJeGnXUKo36Ig5ACHWk4km7HfJnBuEHYyAJ//uBJmUn40DPmx9tAb5ckHTQvQQgkIZUPvkJwOlXGE6Ejq6hewbtAixIkhlNgtNoJN6J3YPfPLx28kxH51tXzHjfPX2VvDgcGd73hC9C69HlmVe7NspibYuUMyAYae7uZrE7gttWdA6ZVP44Pfv4TEelNm3gWjed++PG2Nn/gbIDJJTT+NRc6wXKYdFA4OmjS982Ot++SnIAZDctRlolAACUCgA3JB2Yuv75AbR+KYFDBkz4Uhv/Q2euhLSo8/yVCUxeeLa85Oco7Wk+/NFu/AAAAABJRU5ErkJggg==">MSA - Mon espace privé</a></p>
+              <!-- <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div> --> 
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <p class="card-text text-center"><a href="https://www.jouelestours.fr/" title="Mairie de Joué-Lès-Tours" target="_blank"><img src="Images/joue.jpg" width="100" height="100" alt="Mairie de Joué-Lès-Tours" /></a></span>
+            <div class="card-body">
+              <p class="card-text text-center"><a href="https://www.jouelestours.fr/" target="_blank" title="Mairie de Joué-Lès-Tours" add_date="1517823944" icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACpElEQVQ4jZWTPWjWZxTFz7nP8340b1VImqSZbEj11cWURjtLEadOgmJHoW0iSIYOilREEAQXrZ1KqlDJ0KFjQQqtNZaCCFqkQ/2oih+hSarG2PrGvP//89zjkNaG2KVnu8Plwj2/H/FvCEDA5ti7Zv1mBG00aCXElsSfp4ur53BnYgHLwqXD682RHWa2T9AGMkTSIM8AcgnwplL+dOq3sbGlBwnAAHhfc+QEY2UU7pASAGQCGbQqGAFlgAblYnxq7tluzIy3ANg/y59YrI16LkspZYKSADBWJdzOXozOL7Tf+P3XC9WU7fhrKxqbVjU/6Afg7Fk7PBiNFwVGyWHG4K5sIZjk19pl2jp78+Rk75qR9yzGwZTnzz8o/FJfvX4qt9PRGMg9tFiTl4lEkCQShIBUlB/P3jo12bvuw/0xVI8AQNUa6FGx1ZXPWjUcMxDvurIkGElKcDKYlO48uPXnd8D2qtH2ggHyErQaQtChouT3ZhiKgFZDIglIEo0CTXBeB77OwHZA3OntvxpuyF7MVeR2//HtsXv1dcMzcXmvL+dpdHU1g1VqpAsAGK2/rzm8MyfsigDvguyXu8xo7iLNCWJgseJeGnXUKo36Ig5ACHWk4km7HfJnBuEHYyAJ//uBJmUn40DPmx9tAb5ckHTQvQQgkIZUPvkJwOlXGE6Ejq6hewbtAixIkhlNgtNoJN6J3YPfPLx28kxH51tXzHjfPX2VvDgcGd73hC9C69HlmVe7NspibYuUMyAYae7uZrE7gttWdA6ZVP44Pfv4TEelNm3gWjed++PG2Nn/gbIDJJTT+NRc6wXKYdFA4OmjS982Ot++SnIAZDctRlolAACUCgA3JB2Yuv75AbR+KYFDBkz4Uhv/Q2euhLSo8/yVCUxeeLa85Oco7Wk+/NFu/AAAAABJRU5ErkJggg==">Mairie de Joué-Lès-Tours</a></p>
+            </div>
+          </div>
+       
+      </div>
+    </div>
+  </div>
+  </div>
+</main>
+<!--<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1"> <a href="#">Retour haut de page</a> </p>
+  </div>
+</footer> -->
+<div id="scrollUp"> <a href="#top" title="Retour haut de page"><img src="to_top.png"/></a> </div>
+<script src="bootstrap-5.0.0-beta1-examples/assets/dist/js/bootstrap.bundle.min.js"></script> 
+<script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script> 
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+$( "#tooltip" ).tooltip();
+
+
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+</body>
+</html>
